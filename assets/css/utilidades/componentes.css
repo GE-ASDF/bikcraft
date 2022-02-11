@@ -44,6 +44,43 @@
     color:var(--cor-0);
 }
 
+.titulo-bg{
+    padding-top:60px;
+    padding:60px;
+    background-color: var(--cor-11);
+}
+.titulo p{
+    margin-bottom:4px;
+}
+.btn.seta{
+    display: flex;
+    align-items: center;
+}
+.btn.seta::after{
+    content:"";
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    margin-left: 12px;
+    background:url("../../img/icones/seta.svg")
+}
+.btn.seta:hover::after{
+    transform:translateX(4px);
+    transition:transform .2s ease-in-out;
+}
+
+@media(max-width:800px){
+    .titulo-bg{
+        padding-top:40px;
+        padding-bottom:40px;
+    }
+    .titulo p{
+        font-size: 1rem;
+        text-transform: lowercase;
+        font-weight: 400;
+    }
+}
+
 @media(max-width:600px){
     .introducao .btn{
         padding:12px 16px;
