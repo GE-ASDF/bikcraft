@@ -18,6 +18,12 @@
     flex:1;
     min-width: 200px;
 }
+.bicicleta-imagens img{
+    cursor:pointer;
+}
+.bicicleta-imagens img:first-child{
+    cursor:auto;
+}
 .bicicleta-imagens img:first-child{
     min-width: 100%;
 }
